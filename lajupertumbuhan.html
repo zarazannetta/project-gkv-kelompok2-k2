@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Laju Pertumbuhan RI per</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+        #info-box {
+        position: absolute;
+        top: 10px;
+        right: 10px; 
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        width: 370px;
+        height: 460px;
+        }
+        #pd {
+        font-weight: 50;
+        }
+        #colorinfo {
+        position: absolute;
+        bottom: 30px; 
+        left: 10px; 
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        font-family: Arial, sans-serif;
+        }
+        .colorinfo-key {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+        }
+        #slider { 
+          position: absolute; 
+          top: 10px; 
+          left: 10px; 
+          background: white; 
+          padding: 10px; 
+          border-radius: 3px; 
+          width: 200px; 
+          font-family: Arial, sans-serif;
+          
+        }
+        #slider input[type="range"] {
+        width: 100%;
+        }
+   
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    
+    <div id="info-box">
+      <h3>Laju Pertumbuhan tiap Provinsi di Indonesia
+      <div id="pd"><br>Arahkan kursor ke provinsi yang kamu ingin tahu!</div>
+      <div id="linechart" style="width:100%;height:300px;"></div>
+    </div>
+    <div id="colorinfo"></div>
+    
+    <script src="lajupertumbuhan.js"></script>    
+</body>
+</html>

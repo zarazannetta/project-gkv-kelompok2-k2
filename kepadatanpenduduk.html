@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Kepadatan Penduduk Indonesia</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+        #info-box {
+        position: absolute;
+        top: 10px;
+        right: 10px; 
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        width: 350px;
+        height: 440px;
+        }
+        #pd {
+        font-weight: 50;
+        }
+        #colorinfo {
+        position: absolute;
+        bottom: 30px; 
+        left: 10px; 
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        font-family: Arial, sans-serif;
+        }
+        .colorinfo-key {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+        }
+        #slider { 
+          position: absolute; 
+          top: 10px; 
+          left: 10px; 
+          background: white; 
+          padding: 10px; 
+          border-radius: 3px; 
+          width: 200px; 
+          font-family: Arial, sans-serif;
+          
+        }
+        #slider input[type="range"] {
+        width: 100%;
+        }
+   
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="slider">
+      <input type="range" min="2018" max="2022" step="1" value="2018" id="year" />
+      <label for="year"><br>Tahun: <span id="year-label">2018</span><p>Tidak ada perubahan signifikan antara 2018-2022</p></label>
+    </div>
+    <div id="info-box">
+      <h3>Kepadatan Penduduk tiap Provinsi di Indonesia
+      <div id="pd"><br>Arahkan kursor ke provinsi yang kamu ingin tahu!</div>
+      <div id="barplot" style="width:250;height:280px;"></div>
+    </div>
+    <div id="colorinfo"></div>
+    
+    <script src="kepadatanpenduduk.js"></script>    
+</body>
+</html>

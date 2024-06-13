@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertumbuhan Kependudukan Indonesia 2018-2022</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        main {
+            padding: 20px;
+            width: 100%;
+            max-width: 1600px;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 1550px;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+        h3 {
+            font-weight: 700;
+        }
+        iframe {
+            width: 1500px;
+            height: 800px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            display: block;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 200px 20px 150px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .left-section {
+            flex: 1;
+            text-align: left;
+            margin-right: auto;
+            box-sizing: border-box;
+        }
+        .right-section {
+            flex: 1;
+            text-align: right;
+            margin-left: auto;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pertumbuhan Kependudukan Indonesia Tahun 2018-2022</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Jumlah Penduduk</h2>
+            <iframe src="jumlahpenduduk.html" title="Jumlah Penduduk"></iframe>
+        </section>
+        <section>
+            <h2>Laju Pertumbuhan Penduduk per Tahun</h2>
+            <iframe src="lajupertumbuhan.html" title="Laju Pertumbuhan Penduduk per Tahun"></iframe>
+        </section>
+        <section>
+            <h2>Persentase Penduduk</h2>
+            <iframe src="persentasependuduk.html" title="Persentase Penduduk"></iframe>
+        </section>
+        <section>
+            <h2>Kepadatan Penduduk per Km persegi dan Rasio Jenis Kelamin</h2>
+            <iframe src="kepadatanpenduduk.html" title="Kepadatan Penduduk dan Rasio Jenis Kelamin"></iframe>
+        </section>
+    </main>
+    <footer>
+        <div class="left-section">
+            <h3>Project GKV K2 Kelompok 2</h3>
+            <p><a href="https://github.com/ahmadsubhand" target="_blank">Ahmad Subhan Daryhadi (G6401221023)</a></p>
+            <p><a href="https://github.com/jesikaa08" target="_blank">Jesika Oktaviani (G6401221038)</a></p>
+            <p><a href="https://github.com/RyanM-01" target="_blank">Ryan Muhammad Syahran (G6401221026)</a></p>
+            <p><a href="https://github.com/zarazannetta" target="_blank">Zara Zannetta (G6401221033)</a></p>
+        </div>
+        <div class="right-section">
+            <h3>Sumber</h3>
+            <p><a href="https://www.bps.go.id/id/statistics-table/3/V1ZSbFRUY3lTbFpEYTNsVWNGcDZjek53YkhsNFFUMDkjMw==/penduduk--laju-pertumbuhan-penduduk--distribusi-persentase-penduduk--kepadatan-penduduk--rasio-jenis-kelamin-penduduk-menurut-provinsi.html?year=2019" target="_blank">Badan Pusat Statistik</a></p>
+            <p><a href="https://github.com/ans-4175/peta-indonesia-geojson" target="_blank">Data GeoJSON</a></p>
+            <p><a href="https://docs.mapbox.com/" target="_blank">Dokumentasi Mapbox</a></p>
+        </div>
+    </footer>
+</body>
+</html>
